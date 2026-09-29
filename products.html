@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายการสินค้า</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">StockManager</div>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="products.html" class="active">รายการสินค้า</a></li>
+            <li><a href="add-product.html">เพิ่มสินค้า</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="header-action">
+            <h1>รายการสินค้าคงเหลือ</h1>
+            <a href="add-product.html" class="btn btn-primary">+ เพิ่มสินค้าใหม่</a>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ชื่อสินค้า</th>
+                    <th>ราคา (บาท)</th>
+                    <th>จำนวน</th>
+                    <th>การจัดการ</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- ข้อมูลจะโหลดมาจาก JS -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
